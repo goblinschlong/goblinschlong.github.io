@@ -41,9 +41,30 @@ transition:2s;
 
   <!-- Header -->
   <header class="w3-container w3-centre" style="padding:32px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Hello</b></h1>
-    <p>I hope you're well.</p>
-
+	<h1 class="w3-jumbo"><b>hello</b></h1>
+	<script type="text/javascript">
+	    var myDate = new Date();
+        var myDay = myDate.getDay();
+        // Array of days.
+        var weekday = ['sunday', 'monday', 'tuesday',
+            'wednesday', 'thursday', 'friday', 'saturday'
+        ];
+        document.write("happy " + weekday[myDay]+ ",");
+        document.write("<br/>");
+</script>
+<script>
+//const fs = require('fs')
+//		fs.readFile('greetings.txt', err, data) => {
+//			if (err) throw err;
+//			
+//			greeting = data
+//			//console.log(data.toString)
+//	})
+//		var greeting = 
+//		document.write(greeting[0]);
+//        document.write("<br/>");
+</script>
+<p>I hope you're well.</p>
 
     <!--button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
       <i class="fa fa-download"></i> Input Rota
@@ -51,25 +72,23 @@ transition:2s;
   </header>
 
   <!-- Daily Section -->
-  <div class="w3-content w3-text-light-grey w3-padding-32" id="daily">
-    <h2>Daily</h2>
+  <div class="w3-text-light-grey w3-padding-32" style="padding:16px 16px" id="daily">
+    <h2>daily</h2>
     <hr class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>here is the day's schedule.</p>
+	<p>what can I do with my day?
     </p>  
   <!-- End About Section -->
   </div>
   
   <!-- Progress Section -->
-  <div class="w3-content w3-text-light-grey w3-padding-32" id="progress">
-    <h2>Progress</h2>
+  <div class="w3-content w3-text-light-grey w3-padding-32" style="padding:16px 16px" id="progress">
+    <h2>progress</h2>
     <hr class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>  
-  <!-- End About Section -->
+    <p>how are my projects going?</p>
+	<p>graphs graphs graphs
+    </p> 
+  <!-- End Progress Section -->
   </div>
 
   
@@ -91,6 +110,11 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
+}
+
+//
+function showDate{
+  document.getElementById('date').innerHTML = Date();
 }
 </script>
 <script>
